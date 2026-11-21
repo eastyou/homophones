@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "homophones"
+version = "0.1.0"
+description = "英语同音词：同音组查询、词义辨析与可打印练习页"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "english", "homophones", "vocabulary", "teaching"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+homophones = "homophones.cli:main"
+
+[tool.setuptools]
+packages = ["homophones"]

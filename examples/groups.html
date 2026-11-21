@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>同音词速查表</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei",
+                   "Helvetica Neue", Arial, sans-serif;
+      color: #1f2933;
+      background: #f5f7fa;
+      line-height: 1.65;
+      font-size: 15px;
+    }
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px 36px;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(15, 23, 42, 0.08);
+    }
+    header { border-bottom: 2px solid #2563eb; padding-bottom: 12px; margin-bottom: 22px; }
+    h1 { margin: 0 0 4px; font-size: 24px; color: #1d4ed8; }
+    h2 { margin: 22px 0 10px; font-size: 17px; color: #1e3a8a; }
+    .subtitle { margin: 0; color: #52606d; font-size: 13px; }
+    .card {
+      border: 1px solid #d9e2ec;
+      border-radius: 6px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      page-break-inside: avoid;
+    }
+    .q-head { display: flex; gap: 10px; align-items: baseline; }
+    .no { font-weight: 700; color: #2563eb; flex: 0 0 auto; }
+    .sentence { font-size: 16px; }
+    .blank {
+      display: inline-block;
+      min-width: 88px;
+      border-bottom: 1px solid #334155;
+      text-align: center;
+      color: #334155;
+    }
+    .hint { margin: 8px 0 6px; color: #52606d; font-size: 13px; }
+    .options { margin: 0; padding-left: 20px; }
+    .options li { display: inline-block; margin-right: 18px; font-weight: 600; }
+    .answer { margin: 8px 0 0; color: #b91c1c; font-size: 14px; }
+    .empty { color: #7b8794; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { border: 1px solid #d9e2ec; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #eef2ff; color: #1e3a8a; }
+    .columns { display: flex; gap: 28px; }
+    .column { flex: 1; min-width: 0; }
+    .column ol { margin: 0; padding-left: 22px; }
+    .column li { margin-bottom: 8px; }
+    .letters { list-style-type: upper-alpha; }
+    .grid { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 16px; }
+    .grid span {
+      display: inline-block;
+      min-width: 110px;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 2px;
+    }
+    footer { margin-top: 24px; color: #7b8794; font-size: 12px; text-align: center; }
+    @page { size: A4; margin: 16mm; }
+    @media print {
+      body { background: #ffffff; padding: 0; font-size: 12pt; }
+      .page { max-width: none; padding: 0; box-shadow: none; border-radius: 0; }
+      .card { border-color: #b8c4d0; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>同音词速查表</h1>
+      <p class="subtitle">速查表：同音词对照与例句</p>
+    </header>
+    <table>
+      <thead><tr><th>序号</th><th>同音组</th><th>释义</th><th>例句</th></tr></thead>
+      <tbody>
+      <tr><td>1</td><td><strong>sea</strong><br><strong>see</strong></td><td>sea：大海；海洋<br>see：看见；明白</td><td>We went to the ____ for a swim.</td></tr>
+      <tr><td>2</td><td><strong>right</strong><br><strong>write</strong></td><td>right：右边；正确的<br>write：书写</td><td>Please ____ your name on the paper.</td></tr>
+      <tr><td>3</td><td><strong>their</strong><br><strong>there</strong></td><td>their：他们的<br>there：那里</td><td>The students left ____ books on the desks.</td></tr>
+      <tr><td>4</td><td><strong>pair</strong><br><strong>pear</strong></td><td>pair：一双；一对<br>pear：梨</td><td>She bought a ____ of new shoes.</td></tr>
+      <tr><td>5</td><td><strong>flower</strong><br><strong>flour</strong></td><td>flower：花<br>flour：面粉</td><td>We need some ____ to bake the cake.</td></tr>
+      <tr><td>6</td><td><strong>peace</strong><br><strong>piece</strong></td><td>peace：和平<br>piece：一块；一片</td><td>He ate a ____ of chocolate.</td></tr>
+      <tr><td>7</td><td><strong>break</strong><br><strong>brake</strong></td><td>break：打破；休息<br>brake：刹车</td><td>The bike&#x27;s ____ does not work, so be careful.</td></tr>
+      <tr><td>8</td><td><strong>weather</strong><br><strong>whether</strong></td><td>weather：天气<br>whether：是否</td><td>I don&#x27;t know ____ he will come tonight.</td></tr>
+      <tr><td>9</td><td><strong>son</strong><br><strong>sun</strong></td><td>son：儿子<br>sun：太阳</td><td>The ____ rises in the east every morning.</td></tr>
+      <tr><td>10</td><td><strong>meat</strong><br><strong>meet</strong></td><td>meat：肉<br>meet：见面</td><td>Nice to ____ you, Mr. Green.</td></tr>
+      <tr><td>11</td><td><strong>be</strong><br><strong>bee</strong></td><td>be：是；存在<br>bee：蜜蜂</td><td>A ____ is flying around the flowers.</td></tr>
+      <tr><td>12</td><td><strong>bear</strong><br><strong>bare</strong></td><td>bear：熊<br>bare：赤裸的</td><td>A brown ____ is sleeping in the cave.</td></tr>
+      <tr><td>13</td><td><strong>buy</strong><br><strong>by</strong><br><strong>bye</strong></td><td>buy：购买<br>by：通过；在……旁边<br>bye：再见</td><td>I want to ____ a new notebook.</td></tr>
+      <tr><td>14</td><td><strong>dear</strong><br><strong>deer</strong></td><td>dear：亲爱的<br>deer：鹿</td><td>____ friend, thank you for your help.</td></tr>
+      <tr><td>15</td><td><strong>knight</strong><br><strong>night</strong></td><td>knight：骑士<br>night：夜晚</td><td>The ____ rode a white horse into the castle.</td></tr>
+      <tr><td>16</td><td><strong>knew</strong><br><strong>new</strong></td><td>knew：知道（know 的过去式）<br>new：新的</td><td>I ____ the answer before the teacher asked.</td></tr>
+      <tr><td>17</td><td><strong>know</strong><br><strong>no</strong></td><td>know：知道<br>no：不；没有</td><td>I ____ the answer, so please ask me.</td></tr>
+      <tr><td>18</td><td><strong>here</strong><br><strong>hear</strong></td><td>here：这里<br>hear：听见</td><td>Can you ____ me clearly on the phone?</td></tr>
+      <tr><td>19</td><td><strong>hole</strong><br><strong>whole</strong></td><td>hole：洞；破洞<br>whole：整个的</td><td>There is a ____ in my sock.</td></tr>
+      <tr><td>20</td><td><strong>hour</strong><br><strong>our</strong></td><td>hour：小时<br>our：我们的</td><td>We waited for an ____ at the station.</td></tr>
+      <tr><td>21</td><td><strong>its</strong><br><strong>it&#x27;s</strong></td><td>its：它的<br>it&#x27;s：它是（it is 的缩写）</td><td>The cat licked ____ paws after dinner.</td></tr>
+      <tr><td>22</td><td><strong>made</strong><br><strong>maid</strong></td><td>made：制作（make 的过去式）<br>maid：女仆</td><td>The cake was ____ by my mother.</td></tr>
+      <tr><td>23</td><td><strong>mail</strong><br><strong>male</strong></td><td>mail：邮件；邮寄<br>male：男性的</td><td>I sent the letter by ____ yesterday.</td></tr>
+      <tr><td>24</td><td><strong>one</strong><br><strong>won</strong></td><td>one：一<br>won：赢（win 的过去式）</td><td>Our team ____ the game last night.</td></tr>
+      <tr><td>25</td><td><strong>plain</strong><br><strong>plane</strong></td><td>plain：简单的；平原<br>plane：飞机</td><td>The ____ landed safely on the runway.</td></tr>
+      <tr><td>26</td><td><strong>road</strong><br><strong>rode</strong></td><td>road：道路<br>rode：骑（ride 的过去式）</td><td>He ____ his bike to school this morning.</td></tr>
+      <tr><td>27</td><td><strong>sail</strong><br><strong>sale</strong></td><td>sail：航行<br>sale：出售；促销</td><td>The boat will ____ across the lake.</td></tr>
+      <tr><td>28</td><td><strong>some</strong><br><strong>sum</strong></td><td>some：一些<br>sum：总数；金额</td><td>He paid the ____ of ten dollars.</td></tr>
+      <tr><td>29</td><td><strong>stair</strong><br><strong>stare</strong></td><td>stair：楼梯<br>stare：盯着看</td><td>Please don&#x27;t ____ at strangers.</td></tr>
+      <tr><td>30</td><td><strong>tail</strong><br><strong>tale</strong></td><td>tail：尾巴<br>tale：故事</td><td>The dog wagged its ____ happily.</td></tr>
+      <tr><td>31</td><td><strong>threw</strong><br><strong>through</strong></td><td>threw：扔（throw 的过去式）<br>through：穿过</td><td>He ____ the ball over the fence.</td></tr>
+      <tr><td>32</td><td><strong>two</strong><br><strong>too</strong><br><strong>to</strong></td><td>two：二<br>too：也；太<br>to：到；向</td><td>I have ____ brothers and one sister.</td></tr>
+      <tr><td>33</td><td><strong>wait</strong><br><strong>weight</strong></td><td>wait：等待<br>weight：重量</td><td>Please ____ for me at the school gate.</td></tr>
+      <tr><td>34</td><td><strong>weak</strong><br><strong>week</strong></td><td>weak：虚弱的<br>week：星期</td><td>She was ill and felt very ____.</td></tr>
+      <tr><td>35</td><td><strong>wear</strong><br><strong>where</strong></td><td>wear：穿；戴<br>where：哪里</td><td>____ are my glasses?</td></tr>
+      <tr><td>36</td><td><strong>wood</strong><br><strong>would</strong></td><td>wood：木头<br>would：将会（情态动词）</td><td>I ____ like a cup of tea, please.</td></tr>
+      <tr><td>37</td><td><strong>aloud</strong><br><strong>allowed</strong></td><td>aloud：大声地<br>allowed：被允许的</td><td>Smoking is not ____ in this building.</td></tr>
+      <tr><td>38</td><td><strong>ate</strong><br><strong>eight</strong></td><td>ate：吃（eat 的过去式）<br>eight：八</td><td>She ____ an apple after lunch.</td></tr>
+      <tr><td>39</td><td><strong>blue</strong><br><strong>blew</strong></td><td>blue：蓝色的<br>blew：吹（blow 的过去式）</td><td>The wind ____ hard last night.</td></tr>
+      <tr><td>40</td><td><strong>board</strong><br><strong>bored</strong></td><td>board：木板；董事会<br>bored：感到无聊的</td><td>I am ____ with this game.</td></tr>
+      <tr><td>41</td><td><strong>cell</strong><br><strong>sell</strong></td><td>cell：细胞；牢房<br>sell：卖</td><td>He wants to ____ his old car.</td></tr>
+      <tr><td>42</td><td><strong>cent</strong><br><strong>sent</strong><br><strong>scent</strong></td><td>cent：分（货币）<br>sent：寄；发送（send 的过去式）<br>scent：气味</td><td>I ____ a message to him yesterday.</td></tr>
+      <tr><td>43</td><td><strong>die</strong><br><strong>dye</strong></td><td>die：死亡<br>dye：染色</td><td>The old tree may ____ soon.</td></tr>
+      <tr><td>44</td><td><strong>fair</strong><br><strong>fare</strong></td><td>fair：公平的；集市<br>fare：车费</td><td>The bus ____ is two dollars.</td></tr>
+      <tr><td>45</td><td><strong>flew</strong><br><strong>flu</strong></td><td>flew：飞（fly 的过去式）<br>flu：流感</td><td>She ____ to Beijing yesterday.</td></tr>
+      <tr><td>46</td><td><strong>for</strong><br><strong>four</strong><br><strong>fore</strong></td><td>for：为了<br>four：四<br>fore：前部</td><td>This gift is ____ you.</td></tr>
+      <tr><td>47</td><td><strong>grown</strong><br><strong>groan</strong></td><td>grown：生长（grow 的过去分词）<br>groan：呻吟</td><td>The plants have ____ much taller this year.</td></tr>
+      <tr><td>48</td><td><strong>hair</strong><br><strong>hare</strong></td><td>hair：头发<br>hare：野兔</td><td>A ____ ran across the field quickly.</td></tr>
+      <tr><td>49</td><td><strong>heal</strong><br><strong>heel</strong></td><td>heal：治愈；愈合<br>heel：脚后跟</td><td>The wound will ____ in a few days.</td></tr>
+      <tr><td>50</td><td><strong>high</strong><br><strong>hi</strong></td><td>high：高的<br>hi：嗨</td><td>The wall is too ____ to climb.</td></tr>
+      <tr><td>51</td><td><strong>in</strong><br><strong>inn</strong></td><td>in：在……里面<br>inn：小旅馆</td><td>We stayed at a small ____ near the station.</td></tr>
+      <tr><td>52</td><td><strong>missed</strong><br><strong>mist</strong></td><td>missed：错过（miss 的过去式）<br>mist：薄雾</td><td>I ____ the bus this morning.</td></tr>
+      <tr><td>53</td><td><strong>passed</strong><br><strong>past</strong></td><td>passed：通过（pass 的过去式）<br>past：过去</td><td>He ____ the English exam easily.</td></tr>
+      <tr><td>54</td><td><strong>patience</strong><br><strong>patients</strong></td><td>patience：耐心<br>patients：病人（复数）</td><td>The doctor has many ____ every day.</td></tr>
+      <tr><td>55</td><td><strong>rain</strong><br><strong>reign</strong><br><strong>rein</strong></td><td>rain：雨<br>reign：统治<br>rein：缰绳</td><td>The ____ is very heavy today.</td></tr>
+      <tr><td>56</td><td><strong>raise</strong><br><strong>rays</strong><br><strong>raze</strong></td><td>raise：举起；提高<br>rays：光线（复数）<br>raze：摧毁</td><td>Please ____ your hand if you know the answer.</td></tr>
+      <tr><td>57</td><td><strong>rap</strong><br><strong>wrap</strong></td><td>rap：敲击；说唱<br>wrap：包裹</td><td>Let me ____ the gift for you.</td></tr>
+      <tr><td>58</td><td><strong>ring</strong><br><strong>wring</strong></td><td>ring：铃响；戒指<br>wring：拧</td><td>The phone will ____ at eight o&#x27;clock.</td></tr>
+      <tr><td>59</td><td><strong>role</strong><br><strong>roll</strong></td><td>role：角色<br>roll：卷；滚动</td><td>She plays an important ____ in the play.</td></tr>
+      <tr><td>60</td><td><strong>scene</strong><br><strong>seen</strong></td><td>scene：场景<br>seen：看见（see 的过去分词）</td><td>I have never ____ such a beautiful lake.</td></tr>
+      <tr><td>61</td><td><strong>steal</strong><br><strong>steel</strong></td><td>steal：偷<br>steel：钢</td><td>Don&#x27;t ____ other people&#x27;s things.</td></tr>
+      <tr><td>62</td><td><strong>throne</strong><br><strong>thrown</strong></td><td>throne：王座<br>thrown：扔（throw 的过去分词）</td><td>The king sat on his ____.</td></tr>
+      <tr><td>63</td><td><strong>tide</strong><br><strong>tied</strong></td><td>tide：潮水<br>tied：系（tie 的过去式）</td><td>The ____ comes in every evening.</td></tr>
+      <tr><td>64</td><td><strong>time</strong><br><strong>thyme</strong></td><td>time：时间<br>thyme：百里香</td><td>What ____ is it now?</td></tr>
+      <tr><td>65</td><td><strong>which</strong><br><strong>witch</strong></td><td>which：哪一个<br>witch：女巫</td><td>____ book do you want to borrow?</td></tr>
+      <tr><td>66</td><td><strong>yolk</strong><br><strong>yoke</strong></td><td>yolk：蛋黄<br>yoke：轭</td><td>The egg has a yellow ____.</td></tr>
+      </tbody>
+    </table>
+    <footer>homophones · 英语同音词练习</footer>
+  </main>
+</body>
+</html>
